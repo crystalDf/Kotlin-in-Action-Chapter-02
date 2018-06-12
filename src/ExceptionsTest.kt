@@ -19,6 +19,7 @@ fun main(args: Array<String>) {
                 throw IllegalArgumentException(
                         "A percentage value must be between 0 and 100: $number")
             }
+    println(percentage2)
 
     fun readNumber(reader: BufferedReader): Int? {
         return try {
@@ -33,6 +34,7 @@ fun main(args: Array<String>) {
 
     val reader = BufferedReader(StringReader("239"))
     println(readNumber(reader))
+
     val reader2 = BufferedReader(StringReader("not a number"))
     println(readNumber(reader2))
 }
